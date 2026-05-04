@@ -12,15 +12,18 @@
       <div>
         <p class="eyebrow">PR Approval System</p>
         <h1>ระบบขอซื้อและติดตามอนุมัติ</h1>
-        <p class="subtitle">สร้าง PR, อนุมัติ, ปฏิเสธ, ปิดงาน และ export CSV ได้ทันที ไม่ต้องติดตั้งอะไรเพิ่ม</p>
+        <p class="subtitle">สร้าง PR, อนุมัติ, ปฏิเสธ, ปิดงาน และใช้ Google Sheet เป็นฐานข้อมูลกลางให้หุ้นส่วนเห็นข้อมูลเดียวกัน</p>
       </div>
       <div class="hero-actions">
+        <button id="syncBtn" class="secondary">Sync Google Sheet</button>
+        <button id="apiBtn" class="ghost">ตั้งค่า API URL</button>
         <button id="seedBtn" class="ghost">โหลดข้อมูลตัวอย่าง</button>
         <button id="exportBtn" class="secondary">Export CSV</button>
         <button id="clearBtn" class="danger">ล้างข้อมูล</button>
       </div>
     </header>
 
+    <section id="connectionStatus" class="connection"></section>
     <section class="stats" id="stats"></section>
 
     <section class="grid">
